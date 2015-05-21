@@ -1,0 +1,547 @@
+﻿# You can place the script of your game in this file.
+
+# Declare images below this line, using the image statement.
+# eg. image eileen happy = "eileen_happy.png"
+
+image bgwhite = "#ffffff"
+image bgblack = "#000000"
+image bgskin = "#e5f1e5"
+image bgcolor = "#112119" 
+image bgcolor2 = "#707070"
+image logo = "logo.png"
+
+
+# Declare characters used by this game.
+define e = Character('Eileen', color="#c8ffc8")
+
+init:
+    # button style
+    style m_button is button:
+        xminimum 120
+        xmaximum 120
+        yminimum 50
+        ymaximum 50
+        
+    #variables
+    $ additem = ""
+    $ maxp = 0
+    $maxpoints = 16
+    
+
+    # playervar
+    $ pid = 0
+    $ pname = ""
+    $ hp = 1
+    $ mp = 1
+    $ xp = 1
+    $ cash = 1
+    $ items = []
+    
+    
+    # player1
+    $ pid1 = 1
+    $ pname1 = "1"
+    $ hp1 = 1
+    $ mp1 = 1
+    $ xp1 = 1
+    $ cash1 = 1
+    $ items1 = [""]
+    
+    # player2
+    $ pid2 = 1
+    $ pname2 = "2"
+    $ hp2 = 1
+    $ mp2 = 1
+    $ xp2 = 1
+    $ cash2 = 1
+    $ items2 = [""]
+    
+    # player3
+    $ pid3 = 3
+    $ pname3 = "3"
+    $ hp3 = 1
+    $ mp3 = 1
+    $ xp3 = 1
+    $ cash3 = 1
+    $ items3 = [""]
+    
+    # player4
+    $ pid4 = 4
+    $ pname4 = "4"
+    $ hp4 = 1
+    $ mp4 = 1
+    $ xp4 = 1
+    $ cash4 = 1
+    $ items4 = [""]
+    
+        
+
+
+# Screens:
+
+screen playerchoice:
+     vbox at top:
+        grid 4 1 at truecenter:
+            textbutton "[pname1]" action [Jump("player1load")] align (1.0 , 0.0) style "m_button"
+            textbutton "[pname2]" action [Jump("player2load")] align (1.0 , 0.0) style "m_button"
+            textbutton "[pname3]" action [Jump("player3load")] align (1.0 , 0.0) style "m_button"
+            textbutton "[pname4]" action [Jump("player4load")] align (1.0 , 0.0) style "m_button"
+            
+            
+screen playersave:
+     vbox at top:
+        grid 4 1 at truecenter:
+            textbutton "[pname1]" action [Jump("player1save")] align (1.0 , 0.0) style "m_button"
+            textbutton "[pname2]" action [Jump("player2save")] align (1.0 , 0.0) style "m_button"
+            textbutton "[pname3]" action [Jump("player3save")] align (1.0 , 0.0) style "m_button"
+            textbutton "[pname4]" action [Jump("player4save")] align (1.0 , 0.0) style "m_button"
+
+
+# screen grid PLAY
+screen playergrid:     
+     vbox at top:
+        null height 70
+        text "[pname]" align (0.5 , 0.0)
+        null height 20
+        
+        grid 3 4 at truecenter:
+            ##
+            if  hp >= 1:
+                textbutton "-1 hp" action [SetVariable("hp", (hp-1))] align (1.0 , 0.0) style "m_button"
+            else:
+                null
+            
+            text "[hp]" align (0.5 , 0.5)
+            textbutton "+1 hp" action [SetVariable("hp", (hp+1))] align (0.0 , 0.0) style "m_button"
+            
+            ##
+            if  mp >= 1:
+                textbutton "-1 mp" action [SetVariable("mp", (mp-1))] align (1.0 , 0.0) style "m_button"
+            else:
+                null
+            
+            text "[mp]" align (0.5 , 0.5)
+            textbutton "+1 mp" action [SetVariable("mp", (mp+1))] align (0.0 , 0.0) style "m_button"
+    
+            ##
+            if  xp >= 1:
+                textbutton "-1 xp" action [SetVariable("xp", (xp-1))] align (1.0 , 0.0) style "m_button"
+            else:
+                null
+            
+            text "[xp]" align (0.5 , 0.5)
+            textbutton "+1 xp" action [SetVariable("xp", (xp+1))] align (0.0 , 0.0) style "m_button"
+            
+            ##
+            if  cash >= 1: 
+                textbutton "-1 cash" action [SetVariable("cash", (cash-1))] align (1.0 , 0.0) style "m_button"
+            else:
+                null
+                
+            text "[cash]" align (0.5 , 0.5)
+            textbutton "+1 cash" action [SetVariable("cash", (cash+1))] align (0.0 , 0.0) style "m_button"
+
+        null height 20
+        text "Inventory:" align (0.5 , 0.0)
+        text "[items]" align (0.5 , 0.0)
+        
+            
+            
+
+# screen grid SAVE
+screen playergridsave:   
+    vbox at top:
+        null height 70
+        text "MAX POINTS: [maxp]" align (0.5 , 0.0)
+        null height 20
+        
+        grid 3 4 at truecenter:
+            ##
+            if  hp >= 1:
+                textbutton "-1 hp" action [SetVariable("hp", (hp-1)), SetVariable("maxp", (maxp)+1)] align (1.0 , 0.0) style "m_button"
+            else:
+                null
+                
+            text "[hp]" align (0.5 , 0.5)
+            
+            if  maxp >= 1:
+                textbutton "+1 hp" action [SetVariable("hp", (hp+1)), SetVariable("maxp", (maxp)-1)] align (0.0 , 0.0) style "m_button"
+            else:
+                null
+            
+            ##
+            if  mp >= 1:            
+                textbutton "-1 mp" action [SetVariable("mp", (mp-1)), SetVariable("maxp", (maxp)+1)] align (1.0 , 0.0) style "m_button"
+            else:
+                null
+                
+            text "[mp]" align (0.5 , 0.5)
+            
+            if  maxp >= 1:
+                textbutton "+1 mp" action [SetVariable("mp", (mp+1)), SetVariable("maxp", (maxp)-1)] align (0.0 , 0.0) style "m_button"
+            else:
+                null
+    
+            ##
+            if  xp >= 1:
+                textbutton "-1 xp" action [SetVariable("xp", (xp-1)), SetVariable("maxp", (maxp)+1)] align (1.0 , 0.0) style "m_button"
+            else:
+                null
+                
+            text "[xp]" align (0.5 , 0.5)
+            if  maxp >= 1:
+                textbutton "+1 xp" action [SetVariable("xp", (xp+1)), SetVariable("maxp", (maxp)-1)] align (0.0 , 0.0) style "m_button"
+            else:
+                null
+             
+            ##
+            if  cash >= 1:            
+                textbutton "-1 cash" action [SetVariable("cash", (cash-1)), SetVariable("maxp", (maxp)+1)] align (1.0 , 0.0) style "m_button"
+            else:
+                null
+            text "[cash]" align (0.5 , 0.5)
+            
+            if  maxp >= 1:
+                textbutton "+1 cash" action [SetVariable("cash", (cash+1)), SetVariable("maxp", (maxp)-1)] align (0.0 , 0.0) style "m_button"
+            else:
+                null
+
+        null height 20
+        text "Inventory:" align (0.5 , 0.0)
+        text "[items]" align (0.5 , 0.0)
+        
+        
+
+  
+###########################################  
+# screen autosave -> save values to player each 0.5 second
+screen autosave:
+        if pid == 1:
+            timer 0.5 repeat True action [SetVariable("hp1", (hp))]
+            timer 0.5 repeat True action [SetVariable("mp1", (mp))]
+            timer 0.5 repeat True action [SetVariable("xp1", (xp))]
+            timer 0.5 repeat True action [SetVariable("cash1", (cash))]
+            timer 0.5 repeat True action [SetVariable("items1", (items))]
+        if pid == 2:
+            timer 0.5 repeat True action [SetVariable("hp2", (hp))]
+            timer 0.5 repeat True action [SetVariable("mp2", (mp))]
+            timer 0.5 repeat True action [SetVariable("xp2", (xp))]
+            timer 0.5 repeat True action [SetVariable("cash2", (cash))]
+            timer 0.5 repeat True action [SetVariable("items2", (items))]
+        if pid == 3:
+            timer 0.5 repeat True action [SetVariable("hp3", (hp))]
+            timer 0.5 repeat True action [SetVariable("mp3", (mp))]
+            timer 0.5 repeat True action [SetVariable("xp3", (xp))]
+            timer 0.5 repeat True action [SetVariable("cash3", (cash))]
+            timer 0.5 repeat True action [SetVariable("items3", (items))]
+        if pid == 4:
+            timer 0.5 repeat True action [SetVariable("hp4", (hp))]
+            timer 0.5 repeat True action [SetVariable("mp4", (mp))]
+            timer 0.5 repeat True action [SetVariable("xp4", (xp))]
+            timer 0.5 repeat True action [SetVariable("cash4", (cash))]
+            timer 0.5 repeat True action [SetVariable("items4", (items))]
+
+
+
+
+    
+#####################################
+
+# The game starts here.
+label start:
+    show bgcolor2
+    
+    hide screen playergrid
+    hide screen autosave
+    hide screen playerchoice
+    hide screen playergridsave
+    hide screen playersave
+    
+    show logo at truecenter
+    show text "{size=16}v. 0.1{/size}" at center
+    
+    
+    menu:
+        "Play":
+            jump player1load
+        "Create Players":
+            #jump createplayer
+            #jump player1save
+            jump firstcreate
+        "Quit Game":
+            return
+        
+
+
+label game:
+
+    hide logo
+    hide text
+
+    show screen playergrid
+    show screen playerchoice
+    show screen autosave
+    
+    
+    #menu items
+    menu:
+        "add item":
+            python:
+                additem = renpy.input("Add an item:")
+                additem = additem.strip()
+                #if not additem:
+                   # additem = " "
+            $ items.append(str(additem))
+            jump game
+            
+        "remove item":
+            python:
+                additem = renpy.input("Remove an item:")
+                additem = additem.strip()
+                #if not additem:
+                    #additem = ""
+            $ items.remove(str(additem))
+            jump game
+        
+        "throw dice":
+            jump dice
+        
+
+        "exit game":
+            jump start
+            
+                
+    
+    
+####################################    
+    
+# CREATE PLAYER 
+label firstcreate:
+    hide logo
+    hide text
+
+    show screen playersave
+    centered "Choose a Player"
+    jump player1save
+     
+     
+label createplayer:
+    show screen playergridsave
+    show screen autosave
+    show screen playersave
+    
+    hide logo
+    
+    
+    #menu items
+    menu:
+        "add item":
+            python:
+                additem = renpy.input("Add an item:")
+                additem = additem.strip()
+                #if not additem:
+                   # additem = " "
+            $ items.append(str(additem))
+            jump createplayer
+            
+        "remove item":
+            python:
+                additem = renpy.input("Remove an item:")
+                additem = additem.strip()
+                #if not additem:
+                    #additem = ""
+            $ items.remove(str(additem))
+            jump createplayer
+        
+
+        
+
+        " save all and exit":
+            hide text
+            
+            jump start
+
+
+###################################
+# dice
+
+label dice:
+    hide screen playergrid
+    hide screen autosave
+    hide screen playerchoice
+    hide screen playergridsave
+    hide screen playersave
+    
+    centered "TADA!"
+    
+    jump game
+
+
+
+
+#######################################
+
+# PLAYER 1
+
+label player1load:
+
+    $ pid = 1
+    $ pname = pname1
+    
+    $ hp = hp1
+    $ mp = mp1
+    $ xp = xp1
+    $ cash = cash1
+    $ items = items1
+    
+    jump game
+    
+    
+label player1save:
+    $ pname1 = "1"
+    $ maxp = maxpoints
+    
+    $ pid = 1
+    $ pname = ""
+    
+    $ hp = 1
+    $ mp = 1
+    $ xp = 1
+    $ cash = 1
+    $ items = []
+    
+    hide screen playergridsave
+    
+    python:
+        pname1 = renpy.input("Name Player 1:")
+        pname1 = pname1.strip()
+        if not pname1:
+            pname1 = "P1"
+
+
+    jump createplayer
+
+
+# PLAYER 2 
+
+label player2load:
+
+    $ pid = 2
+    $ pname = pname2
+    
+    $ hp = hp2
+    $ mp = mp2
+    $ xp = xp2
+    $ cash = cash2
+    $ items = items2
+    
+    jump game
+    
+
+label player2save:
+    $ pname2 = "2"
+    $ maxp = maxpoints
+    
+    $ pid = 2
+    $ pname = ""
+    
+    $ hp = 1
+    $ mp = 1
+    $ xp = 1
+    $ cash = 1
+    $ items = []
+    
+    hide screen playergridsave
+    
+    python:
+        pname2 = renpy.input("Name Player 2:")
+        pname2 = pname2.strip()
+        if not pname2:
+            pname2 = "P2"
+
+    jump createplayer
+    
+
+
+# PLAYER 3
+
+label player3load:
+
+    $ pid = 3
+    $ pname = pname3
+    
+    $ hp = hp3
+    $ mp = mp3
+    $ xp = xp3
+    $ cash = cash3
+    $ items = items3
+    
+    jump game
+    
+
+label player3save:
+    $ pname3 = "3"
+    $ maxp = maxpoints
+    
+    $ pid = 3
+    $ pname = ""
+    
+    $ hp = 1
+    $ mp = 1
+    $ xp = 1
+    $ cash = 1
+    $ items = []
+    
+    hide screen playergridsave
+    
+    python:
+        pname3 = renpy.input("Name Player 3:")
+        pname3 = pname3.strip()
+        if not pname3:
+            pname3 = "P3"
+
+    jump createplayer 
+    
+
+
+# PLAYER 4
+
+label player4load:
+
+    $ pid = 4
+    $ pname = pname4
+    
+    $ hp = hp4
+    $ mp = mp4
+    $ xp = xp4
+    $ cash = cash4
+    $ items = items4
+    
+    jump game
+    
+label player4save:
+    $ pname4 = "4"
+    
+    $ maxp = maxpoints
+    
+    $ pid = 4
+    $ pname = ""
+    
+    $ hp = 1
+    $ mp = 1
+    $ xp = 1
+    $ cash = 1
+    $ items = []
+    
+    hide screen playergridsave
+    
+    python:
+        pname4 = renpy.input("Name Player 4:")
+        pname4 = pname4.strip()
+        if not pname4:
+            pname4 = "P4"
+
+    jump createplayer
+    
+    
+    

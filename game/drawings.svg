@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="480"
+   height="800"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="drawings.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3837">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3839" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3841" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3761">
+      <stop
+         style="stop-color:#cbe86b;stop-opacity:1;"
+         offset="0"
+         id="stop3763" />
+      <stop
+         style="stop-color:#cbe86b;stop-opacity:0;"
+         offset="1"
+         id="stop3765" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3761"
+       id="linearGradient3767"
+       x1="264.64285"
+       y1="-392.00504"
+       x2="264.64285"
+       y2="-459.86218"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(1.4285693,-0.71428572)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3837"
+       id="linearGradient3843"
+       x1="132.67857"
+       y1="210.53571"
+       x2="133.21429"
+       y2="124.82143"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-0.53571429,249.86218)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994951"
+     inkscape:cx="118.77028"
+     inkscape:cy="545.80326"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1576"
+     inkscape:window-height="850"
+     inkscape:window-x="24"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-252.36218)">
+    <g
+       id="g3002"
+       inkscape:export-filename="/home/vinz/RenPIGames/RPGApp/game/logo.png"
+       inkscape:export-xdpi="90.052879"
+       inkscape:export-ydpi="90.052879">
+      <text
+         inkscape:export-ydpi="90.052887"
+         inkscape:export-xdpi="90.052887"
+         inkscape:export-filename="/home/vinz/RenPIGames/RPGApp/game/logo.png"
+         sodipodi:linespacing="125%"
+         id="text2985"
+         y="431.15051"
+         x="153.99739"
+         style="font-size:42.59291458px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cbe86b;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#cbe86b;fill-opacity:1;font-family:'Mom´sTypewriter';-inkscape-font-specification:'Mom´sTypewriter'"
+           y="431.15051"
+           x="153.99739"
+           id="tspan2987"
+           sodipodi:role="line">RenRPG</tspan></text>
+      <text
+         inkscape:export-ydpi="90.052887"
+         inkscape:export-xdpi="90.052887"
+         inkscape:export-filename="/home/vinz/RenPIGames/RPGApp/game/logo.png"
+         transform="scale(1,-1)"
+         xml:space="preserve"
+         style="font-size:42.59291458px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient3767);fill-opacity:1;stroke:none;font-family:Sans"
+         x="153.99739"
+         y="-432.21902"
+         id="text3757"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3759"
+           x="153.99739"
+           y="-432.21902"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#linearGradient3767);fill-opacity:1;font-family:'Mom´sTypewriter';-inkscape-font-specification:'Mom´sTypewriter'">RenRPG</tspan></text>
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#cbe86b;fill-opacity:1;stroke:#8dd35f;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path3790"
+       sodipodi:cx="164.52859"
+       sodipodi:cy="317.02081"
+       sodipodi:rx="23.107239"
+       sodipodi:ry="23.107239"
+       d="m 187.63583,317.02081 c 0,12.76178 -10.34546,23.10724 -23.10724,23.10724 -12.76177,0 -23.10723,-10.34546 -23.10723,-23.10724 0,-12.76177 10.34546,-23.10724 23.10723,-23.10724 12.76178,0 23.10724,10.34547 23.10724,23.10724 z"
+       transform="translate(-221.42857,275.57647)" />
+    <path
+       sodipodi:nodetypes="ccccccccccccccccccccccc"
+       inkscape:connector-curvature="0"
+       id="path3795"
+       d="m -41.232432,488.35751 3.103882,-0.2349 0.880889,5.40279 3.774643,-0.14245 -0.01619,-5.20162 5.461512,-0.52853 -0.05873,5.63769 3.215463,0.30646 0.190641,-5.23945 3.699734,0.35235 0.352355,5.16789 3.90035,0.0618 -0.72915,-5.5821 2.995022,-0.41107 0.293631,5.69641 1.729278,0.0769 0.267403,-6.0083 2.166438,0.64599 -0.939615,37.07889 0.939615,7.43646 -31.227181,0 1.526875,-6.8492 z"
+       style="fill:#cbe86b;fill-opacity:1;stroke:#1c140d;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       style="fill:#cbe86b;fill-opacity:1;stroke:#1c140d;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m -25.410714,520.48718 c -2.20116,0 -3.96875,1.76759 -3.96875,3.96875 l 0,5.75 7.9375,0 0,-5.75 c 0,-2.20116 -1.76759,-3.96875 -3.96875,-3.96875 z"
+       id="rect3803"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g3005"
+       inkscape:export-filename="/home/vinz/RenPIGames/RPGApp/game/logo.png"
+       inkscape:export-xdpi="90.052879"
+       inkscape:export-ydpi="90.052879"
+       transform="translate(4.4590311,0)">
+      <path
+         inkscape:export-ydpi="90.052887"
+         inkscape:export-xdpi="90.052887"
+         inkscape:export-filename="/home/vinz/RenPIGames/RPGApp/game/logo.png"
+         sodipodi:type="arc"
+         style="fill:#707070;fill-opacity:1;stroke:#1c140d;stroke-width:1.05798769;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="path3825"
+         sodipodi:cx="102.5"
+         sodipodi:cy="352.5"
+         sodipodi:rx="25.357143"
+         sodipodi:ry="25.357143"
+         d="m 127.85714,352.5 c 0,14.00436 -11.35278,25.35714 -25.35714,25.35714 -14.004364,0 -25.357143,-11.35278 -25.357143,-25.35714 0,-14.00436 11.352779,-25.35714 25.357143,-25.35714 14.00436,0 25.35714,11.35278 25.35714,25.35714 z"
+         transform="matrix(1.8903811,0,0,1.8903811,45.818045,-348.37253)" />
+      <path
+         inkscape:export-ydpi="90.052887"
+         inkscape:export-xdpi="90.052887"
+         inkscape:export-filename="/home/vinz/RenPIGames/RPGApp/game/logo.png"
+         style="fill:#cbe86b;fill-opacity:1;stroke:#1c140d;stroke-width:1.99999988;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 233.90214,263.90628 -12.9089,1.12152 0.0738,11.01714 -8.92559,0.26389 -2.06542,-11.34697 -7.37652,0.46176 3.6145,79.49496 -3.6145,14.51362 73.76519,0 -2.28672,-15.70114 2.28672,-78.30744 -5.16357,-1.3854 -0.59012,12.73239 -4.13085,-0.19765 -0.66389,-12.00671 -7.08145,0.85765 1.6966,11.80877 -9.14689,-0.13193 -0.88518,-10.9512 -8.70429,-0.72564 -0.44259,11.0831 -7.59782,-0.65972 0.14753,-11.94069 z m 6.19628,69.33544 c 5.19581,0 9.36818,3.73154 9.36818,8.37832 l 0,12.13865 -18.73636,0 0,-12.13865 c 0,-4.64678 4.17237,-8.37832 9.36818,-8.37832 z"
+         id="path3827"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:export-ydpi="90.052887"
+       inkscape:export-xdpi="90.052887"
+       inkscape:export-filename="/home/vinz/RenPIGames/RPGApp/game/logo.png"
+       sodipodi:type="arc"
+       style="fill:#707070;fill-opacity:1;stroke:#1c140d;stroke-width:1.05798769;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path3011"
+       sodipodi:cx="102.5"
+       sodipodi:cy="352.5"
+       sodipodi:rx="25.357143"
+       sodipodi:ry="25.357143"
+       d="m 127.85714,352.5 c 0,14.00436 -11.35278,25.35714 -25.35714,25.35714 -14.004364,0 -25.357143,-11.35278 -25.357143,-25.35714 0,-14.00436 11.352779,-25.35714 25.357143,-25.35714 14.00436,0 25.35714,11.35278 25.35714,25.35714 z"
+       transform="matrix(1.8903811,0,0,1.8903811,-379.89623,-384.08681)" />
+    <path
+       inkscape:export-ydpi="90.052887"
+       inkscape:export-xdpi="90.052887"
+       inkscape:export-filename="/home/vinz/RenPIGames/RPGApp/game/logo.png"
+       style="fill:#cbe86b;fill-opacity:1;stroke:#1c140d;stroke-width:1.99999988;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -191.81214,228.19199 -12.9089,1.12152 0.0738,11.01714 -8.92559,0.26389 -2.06542,-11.34697 -7.37652,0.46176 3.6145,79.49496 -3.6145,14.51362 73.76519,0 -2.28672,-15.70114 2.28672,-78.30744 -5.16357,-1.3854 -0.59012,12.73239 -4.13085,-0.19765 -0.66389,-12.00671 -7.08145,0.85765 1.6966,11.80877 -9.14689,-0.13193 -0.88518,-10.9512 -8.70429,-0.72564 -0.44259,11.0831 -7.59782,-0.65972 0.14753,-11.94069 z m 6.19628,69.33544 c 5.19581,0 9.36818,3.73154 9.36818,8.37832 l 0,12.13865 -18.73636,0 0,-12.13865 c 0,-4.64678 4.17237,-8.37832 9.36818,-8.37832 z"
+       id="path3013"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
