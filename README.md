@@ -2,6 +2,8 @@
 
 A Tool for RPG Game Masters.
 
+GET IT ON GOOGLE PLAY: https://play.google.com/store/apps/details?id=net.sonejo.renrpg
+
 Created by Vincent Rateau at Sonejo Studios 
 www.sonejo.net
 
